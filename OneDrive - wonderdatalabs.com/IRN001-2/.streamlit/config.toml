@@ -1,0 +1,26 @@
+[global]
+# Configuração global
+developmentMode = false
+showWarningOnDirectExecution = false
+
+[server]
+# Configurações do servidor
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 200
+
+[browser]
+# Configurações do navegador
+gatherUsageStats = false
+serverAddress = "0.0.0.0"
+serverPort = 8501
+
+[theme]
+# Tema personalizado
+primaryColor = "#2E8B57"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F8F0"
+textColor = "#262730"
+font = "sans serif" 
