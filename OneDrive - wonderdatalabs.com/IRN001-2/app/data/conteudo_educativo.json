@@ -1,0 +1,199 @@
+{
+    "artigos": [
+        {
+            "id": 1,
+            "titulo": "Como separar corretamente os resíduos recicláveis",
+            "conteudo": "A separação correta dos resíduos recicláveis é essencial para o sucesso da coleta seletiva. Cada tipo de material deve ser separado adequadamente: Papel (jornais, revistas, caixas), Plástico (garrafas, embalagens), Vidro (garrafas, potes) e Metal (latas, tampas). Todos os materiais devem estar limpos e secos. A contaminação com resíduos orgânicos pode comprometer todo o processo de reciclagem. Por isso, é importante lavar embalagens que tiveram contato com alimentos antes de separá-las para reciclagem. Além disso, é recomendável compactar os materiais para ocupar menos espaço, como amassar latas e garrafas plásticas.",
+            "categoria": "reciclagem",
+            "data_publicacao": "2025-01-15",
+            "autor": "Secretaria de Meio Ambiente"
+        },
+        {
+            "id": 2,
+            "titulo": "Benefícios da reciclagem para o meio ambiente",
+            "conteudo": "A reciclagem traz diversos benefícios para o meio ambiente: redução da poluição do solo, da água e do ar; economia de energia; diminuição da extração de recursos naturais; redução do volume de resíduos enviados aos aterros sanitários; geração de empregos na indústria de reciclagem. Para cada tonelada de papel reciclado, por exemplo, economiza-se cerca de 20 árvores, 10 mil litros de água e 350 kg de petróleo. Já a reciclagem de alumínio economiza 95% da energia necessária para produzir o mesmo alumínio a partir da matéria-prima virgem (bauxita). Além disso, materiais como o vidro e o alumínio são 100% recicláveis e podem ser reciclados infinitas vezes.",
+            "categoria": "meio_ambiente",
+            "data_publicacao": "2025-02-10",
+            "autor": "Secretaria de Meio Ambiente"
+        },
+        {
+            "id": 3,
+            "titulo": "O papel dos catadores na economia circular",
+            "conteudo": "Os catadores de materiais recicláveis desempenham um papel fundamental na economia circular. Eles são responsáveis por coletar, separar e encaminhar para a reciclagem uma grande parte dos resíduos sólidos urbanos. Esse trabalho não apenas ajuda a preservar o meio ambiente, mas também gera renda para milhares de famílias. No Brasil, estima-se que existam mais de 800 mil catadores, que são responsáveis por cerca de 90% de todo o material que chega às indústrias de reciclagem. Ao apoiar o trabalho dos catadores, a sociedade contribui para a inclusão social, a geração de emprego e renda, e a preservação ambiental.",
+            "categoria": "social",
+            "data_publicacao": "2025-03-05",
+            "autor": "Associação de Catadores de Itajubá"
+        },
+        {
+            "id": 4,
+            "titulo": "Como reduzir a geração de resíduos no dia a dia",
+            "conteudo": "A redução da geração de resíduos é o primeiro passo para uma gestão sustentável de resíduos. Algumas práticas simples que podem ser adotadas no dia a dia incluem: evitar produtos descartáveis; preferir produtos com menos embalagens; utilizar sacolas reutilizáveis para compras; evitar o desperdício de alimentos; reutilizar itens sempre que possível. O conceito dos 5R's (Repensar, Recusar, Reduzir, Reutilizar e Reciclar) pode ser aplicado em todas as nossas ações diárias. Lembre-se que o melhor resíduo é aquele que não é gerado. Antes de descartar algo, pense se não é possível dar um novo uso para o item.",
+            "categoria": "dia_a_dia",
+            "data_publicacao": "2025-04-20",
+            "autor": "Projeto Sustentabilidade Urbana"
+        }
+    ],
+    "dicas": [
+        {
+            "id": 1,
+            "titulo": "Separe o lixo reciclável do orgânico",
+            "conteudo": "Mantenha recipientes separados para resíduos recicláveis e orgânicos em sua casa.",
+            "categoria": "dia_a_dia"
+        },
+        {
+            "id": 2,
+            "titulo": "Lave as embalagens antes de reciclar",
+            "conteudo": "Embalagens sujas podem contaminar outros materiais recicláveis.",
+            "categoria": "dia_a_dia"
+        },
+        {
+            "id": 3,
+            "titulo": "Aplaste as embalagens",
+            "conteudo": "Reduza o volume das embalagens para otimizar o espaço de armazenamento.",
+            "categoria": "dia_a_dia"
+        },
+        {
+            "id": 4,
+            "titulo": "Pilhas e baterias têm descarte especial",
+            "conteudo": "Não descarte pilhas e baterias junto com o lixo comum ou reciclável.",
+            "categoria": "especiais"
+        },
+        {
+            "id": 5,
+            "titulo": "Doe o que não usa mais",
+            "conteudo": "Roupas, livros e objetos em bom estado podem ser doados em vez de descartados.",
+            "categoria": "social"
+        },
+        {
+            "id": 6,
+            "titulo": "Faça compostagem de resíduos orgânicos",
+            "conteudo": "Transforme restos de alimentos em adubo para plantas e jardins.",
+            "categoria": "orgânicos"
+        },
+        {
+            "id": 7,
+            "titulo": "Testando dica do dia",
+            "conteudo": "Cuidado com Vidro, ele pode cortar os dedos.",
+            "categoria": "Vidro"
+        },
+        {
+            "id": 8,
+            "titulo": "Testando dica do dia",
+            "conteudo": "Cuidado com Vidro, ele pode cortar os dedos.",
+            "categoria": "Vidro"
+        }
+    ],
+    "materiais": [
+        {
+            "tipo": "papel",
+            "o_que_pode": [
+                "Jornais",
+                "Revistas",
+                "Folhas",
+                "Caixas de papelão",
+                "Cadernos",
+                "Livros"
+            ],
+            "o_que_nao_pode": [
+                "Papel higiênico",
+                "Papel toalha",
+                "Guardanapos usados",
+                "Papel plastificado",
+                "Papel parafinado",
+                "Papel carbono"
+            ],
+            "dicas": "Mantenha o papel seco e livre de resíduos orgânicos.",
+            "cor_lixeira": "Azul"
+        },
+        {
+            "tipo": "plástico",
+            "o_que_pode": [
+                "Garrafas PET",
+                "Embalagens de produtos de limpeza",
+                "Potes de alimentos",
+                "Sacos plásticos",
+                "Tubos de PVC",
+                "Brinquedos"
+            ],
+            "o_que_nao_pode": [
+                "Celofane",
+                "Embalagens metalizadas",
+                "Plásticos muito sujos"
+            ],
+            "dicas": "Lave e seque as embalagens antes de descartar.",
+            "cor_lixeira": "Vermelho"
+        },
+        {
+            "tipo": "vidro",
+            "o_que_pode": [
+                "Garrafas",
+                "Potes",
+                "Frascos",
+                "Copos"
+            ],
+            "o_que_nao_pode": [
+                "Espelhos",
+                "Vidros de janela",
+                "Lâmpadas",
+                "Tubos de TV",
+                "Cerâmica",
+                "Porcelana"
+            ],
+            "dicas": "Remova tampas e rótulos quando possível.",
+            "cor_lixeira": "Verde"
+        },
+        {
+            "tipo": "metal",
+            "o_que_pode": [
+                "Latas de alumínio",
+                "Latas de aço",
+                "Tampas",
+                "Ferragens",
+                "Arames",
+                "Panelas sem cabo"
+            ],
+            "o_que_nao_pode": [
+                "Latas de tintas",
+                "Latas de solventes químicos",
+                "Pilhas",
+                "Baterias"
+            ],
+            "dicas": "Enxágue as latas para remover resíduos de alimentos.",
+            "cor_lixeira": "Amarelo"
+        },
+        {
+            "tipo": "orgânico",
+            "o_que_pode": [
+                "Restos de alimentos",
+                "Cascas de frutas",
+                "Borra de café",
+                "Folhas",
+                "Galhos pequenos"
+            ],
+            "o_que_nao_pode": [
+                "Carnes",
+                "Ossos",
+                "Óleos",
+                "Gorduras",
+                "Laticínios"
+            ],
+            "dicas": "Ideal para compostagem doméstica.",
+            "cor_lixeira": "Marrom"
+        },
+        {
+            "tipo": "eletrônicos",
+            "o_que_pode": [
+                "Celulares",
+                "Computadores",
+                "Impressoras",
+                "Televisores",
+                "Equipamentos eletrônicos"
+            ],
+            "o_que_nao_pode": [
+                "Equipamentos quebrados com vazamento de substâncias tóxicas"
+            ],
+            "dicas": "Procure pontos de coleta específicos para eletrônicos.",
+            "cor_lixeira": "Laranja"
+        }
+    ]
+}

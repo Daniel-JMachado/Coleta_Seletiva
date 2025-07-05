@@ -1,0 +1,446 @@
+/* CSS específico para a página de morador */
+
+/* Cabeçalho */
+.morador-header {
+    color: #2e8b57;
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #e9e9e9;
+}
+
+.morador-section-title {
+    color: #2e8b57;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Card de boas-vindas */
+.morador-welcome-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-left: 5px solid #2e8b57;
+}
+
+.morador-welcome-card .morador-header {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #2e8b57;
+}
+
+.morador-welcome-card h2 {
+    color: #2e8b57;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.morador-welcome-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Cards de estatísticas */
+.morador-stat-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.morador-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.morador-stat-card h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+}
+
+.morador-stat-card p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.morador-stat-total {
+    border-top: 4px solid #3498db;
+}
+
+.morador-stat-total h3 {
+    color: #3498db;
+}
+
+.morador-stat-pending {
+    border-top: 4px solid #f39c12;
+}
+
+.morador-stat-pending h3 {
+    color: #f39c12;
+}
+
+.morador-stat-completed {
+    border-top: 4px solid #2ecc71;
+}
+
+.morador-stat-completed h3 {
+    color: #2ecc71;
+}
+
+/* Notificações */
+.morador-notification-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #2e8b57;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito hover para notificações */
+.morador-notification-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo específico para notificações lidas */
+.morador-notification-card.notification-read {
+    border-left: 4px solid #95b1a3;
+    background-color: #f9f9f9;
+    opacity: 0.85;
+}
+
+.morador-notification-card h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.morador-notification-card p {
+    margin-bottom: 0.5rem;
+}
+
+.morador-notification-card small {
+    color: #777;
+    font-style: italic;
+    display: block;
+    text-align: right;
+}
+
+/* Estilo para a contagem de notificações não lidas */
+.notification-badge {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+}
+
+/* Card de dica */
+.morador-tip-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #27ae60;
+}
+
+.morador-tip-card h4 {
+    color: #27ae60;
+    margin-bottom: 0.8rem;
+}
+
+/* Formulário de solicitação de coleta */
+.morador-solicitacao-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Cards de catadores para seleção */
+.morador-catador-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #3498db;
+    transition: transform 0.2s;
+}
+
+.morador-catador-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.morador-catador-card h4 {
+    color: #3498db;
+    margin-bottom: 0.8rem;
+}
+
+/* Cards de catadores (página detalhada) */
+.morador-catador-detail-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #3498db;
+}
+
+.morador-catador-detail-card h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.morador-catador-info {
+    margin-bottom: 1rem;
+}
+
+.morador-catador-bio {
+    font-style: italic;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+/* Cards de coletas */
+.morador-coleta-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.morador-coleta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.morador-coleta-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.morador-coleta-status {
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.morador-coleta-pending {
+    border-left: 5px solid #f39c12;
+}
+
+.morador-coleta-pending .morador-coleta-status {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.morador-coleta-scheduled {
+    border-left: 5px solid #3498db;
+}
+
+.morador-coleta-scheduled .morador-coleta-status {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.morador-coleta-completed {
+    border-left: 5px solid #2ecc71;
+}
+
+.morador-coleta-completed .morador-coleta-status {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Artigos educativos */
+.morador-article-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.morador-article-card h3 {
+    color: #2e8b57;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.morador-article-content {
+    line-height: 1.6;
+}
+
+/* Estilos para o perfil do morador */
+.profile-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-header {
+    background: linear-gradient(135deg, #2e8b57 0%, #228b22 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    color: white;
+    box-shadow: 0 8px 32px rgba(46, 139, 87, 0.2);
+}
+
+.profile-header h1 {
+    margin: 0 0 20px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.profile-header p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.profile-photo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-title {
+    color: #2e8b57;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* Estilos para formulários de edição */
+.stForm {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    margin-top: 20px;
+}
+
+.stForm .stButton button {
+    background: linear-gradient(135deg, #2e8b57 0%, #228b22 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stForm .stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(46, 139, 87, 0.3);
+}
+
+/* Estilos para expander */
+.streamlit-expander {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.streamlit-expander .streamlit-expanderHeader {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 15px 20px;
+    border-radius: 12px 12px 0 0;
+    font-weight: 600;
+    color: #2e8b57;
+}
+
+.streamlit-expander .streamlit-expanderContent {
+    padding: 20px;
+}
+
+/* Animações para cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-container > div {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .morador-welcome-card,
+    .morador-stat-card,
+    .morador-solicitacao-form,
+    .morador-catador-detail-card,
+    .morador-coleta-card,
+    .morador-article-card {
+        padding: 1.2rem;
+    }
+    
+    .morador-header {
+        font-size: 1.8rem;
+    }
+    
+    .morador-section-title {
+        font-size: 1.4rem;
+    }
+
+    .profile-container {
+        padding: 15px;
+    }
+    
+    .profile-header {
+        padding: 20px;
+    }
+    
+    .profile-header h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-title {
+        font-size: 1.8rem;
+    }
+}

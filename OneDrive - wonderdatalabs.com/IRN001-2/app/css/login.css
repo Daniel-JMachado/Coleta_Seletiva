@@ -1,0 +1,292 @@
+/* CSS específico para a página de login */
+
+/* Estilos gerais da página */
+.main-header {
+    font-size: 2.2rem;
+    color: #1a5e40;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.subheader {
+    font-size: 1.2rem;
+    color: #2e8b57;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    margin-top: 0;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* A linha verde já foi removida */
+.login-header:after {
+    content: none;
+}
+
+/* Estilos dos campos de input */
+div[data-baseweb="input"], div[data-baseweb="select"] {
+    background-color: #f8fcfa !important;
+    border-radius: 8px !important;
+    border: 1px solid #e0e0e0 !important;
+    padding: 4px 8px !important;
+    transition: all 0.3s !important;
+}
+
+div[data-baseweb="input"]:focus-within, div[data-baseweb="select"]:focus-within {
+    border-color: #2ecc71 !important;
+    box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.2) !important;
+}
+
+/* Botão de login (apenas para o botão Entrar) */
+div[data-testid="stFormSubmitButton"] > button[kind="secondaryFormSubmit"],
+button[data-testid="stBaseButton-secondaryFormSubmit"] {
+    background: linear-gradient(135deg, #2ecc70d2, #27ae60) !important;
+    color: white !important;
+    width: 100%;
+    margin-top: 1rem !important;
+    border-radius: 8px !important;
+    padding: 0.75rem 0 !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease;
+    border: none !important;
+    box-shadow: 0 4px 10px rgba(39, 174, 96, 0.3);
+    text-transform: uppercase;
+    font-size: 0.9rem !important;
+}
+
+div[data-testid="stFormSubmitButton"] > button[kind="secondaryFormSubmit"]:hover,
+button[data-testid="stBaseButton-secondaryFormSubmit"]:hover {
+    background: linear-gradient(135deg, #27ae60, #219652) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(39, 174, 96, 0.4);
+}
+
+div[data-testid="stFormSubmitButton"] > button[kind="secondaryFormSubmit"]:active,
+button[data-testid="stBaseButton-secondaryFormSubmit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(39, 174, 96, 0.3);
+}
+
+/* Box de informacoes */
+.info-box {
+    background: linear-gradient(135deg, #ffffff, #f7fbff);
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-right: 5px solid #3498db;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-box:before {
+    content: "♻️";
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    font-size: 6rem;
+    opacity: 0.05;
+    transform: rotate(15deg);
+}
+
+.info-box h3 {
+    color: #2980b9;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.info-box h3:after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background-color: #3498db;
+    bottom: -8px;
+    left: 0;
+    border-radius: 2px;
+}
+
+.info-box p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+/* Card de beneficios */
+.login-benefits-card {
+    background: linear-gradient(135deg, #ffffff, #f5fff8);
+    padding: 2rem;
+    border-radius: 16px;
+    margin-top: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-right: 5px solid #2ecc71;
+    position: relative;
+}
+
+.login-benefits-card h4 {
+    color: #27ae60;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.login-benefits-card h4:after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: #2ecc71;
+    bottom: -8px;
+    left: 0;
+    border-radius: 2px;
+}
+
+.login-benefits-card ul {
+    padding-left: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.login-benefits-card li {
+    margin-bottom: 0.8rem;
+    color: #444;
+    position: relative;
+    padding-left: 0.5rem;
+    line-height: 1.5;
+}
+
+.login-benefits-card li:before {
+    content: "✓";
+    color: #2ecc71;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Textos informativos */
+.login-info-text {
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 0.2rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.login-contact-text {
+    text-align: center;
+    margin-top: 0.2rem;
+    color: #777;
+    font-size: 0.8rem;
+}
+
+/* Rodape */
+.login-footer {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    color: #666;
+    font-size: 0.8rem;
+    border-top: 1px solid #eee;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+/* Removendo estilos genéricos de botões para evitar conflitos */
+/* Nota: Mantemos apenas os estilos específicos para cada tipo de botão */
+.stButton > button {
+    /* Estilos básicos apenas */
+    transition: all 0.3s ease;
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 992px) {
+    .main-header {
+        font-size: 2.2rem;
+    }
+    
+    .subheader {
+        font-size: 1.2rem;
+    }
+    
+    .login-container, .info-box, .login-benefits-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        font-size: 1.8rem;
+    }
+    
+    .subheader {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .login-container, .info-box, .login-benefits-card {
+        padding: 1rem;
+        margin: 0.3rem auto;
+        border-radius: 12px;
+    }
+    
+    .login-header, .info-box h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Efeito de gradiente no fundo da página */
+.background-gradient {
+    background: linear-gradient(135deg, #f5fcf8, #eaf7ff);
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+}
+
+/* Layout centralizado para tela de login */
+.login-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    min-height: auto;
+}
+
+/* Container para o logo central */
+.logo-container {
+    text-align: center;
+    margin-bottom: 0.2rem; /* Reduzido de 0.9rem para 0.2rem */
+    display: flex;
+    justify-content: center;
+}
+
+/* Esconder sidebar na página de login */
+div[data-testid="stSidebar"], 
+div[data-testid="collapsedControl"],
+button[kind="header"] {
+    display: none !important;
+}
+
+/* Ocultando o botão de mostrar/ocultar senha (ícone de olho) */
+button[aria-label="Show password text"],
+button[aria-label="Hide password text"],
+button[data-testid="passwordFieldVisibilityToggle"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}

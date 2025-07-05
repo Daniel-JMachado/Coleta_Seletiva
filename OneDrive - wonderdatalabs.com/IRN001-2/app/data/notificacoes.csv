@@ -1,0 +1,119 @@
+id,usuario_id,tipo_usuario,data,mensagem,lida,referencia_id,tipo,titulo,remetente_id,remetente_tipo
+1,2.0,catador,2025-06-25 10:20:00,Nova solicitação de coleta no bairro Centro,True,1.0,nova_solicitacao,,,
+2,1.0,morador,2025-06-27 14:05:00,Sua solicitação de coleta foi aceita pelo catador,True,1.0,coleta_aceita,,,
+3,6.0,catador,2025-06-20 09:50:00,Nova solicitação de coleta no bairro Varginha,True,3.0,nova_solicitacao,,,
+4,4.0,morador,2025-06-22 11:35:00,Sua solicitação de coleta foi realizada com sucesso,False,3.0,coleta_realizada,,,
+5,7.0,catador,2025-06-22 16:25:00,Nova solicitação de coleta no bairro Morro Chic,True,4.0,nova_solicitacao,,,
+6,5.0,morador,2025-06-24 13:20:00,Sua solicitação de coleta foi realizada com sucesso,False,4.0,coleta_realizada,,,
+7,2.0,catador,2025-06-28 14:35:00,Nova solicitação de coleta no bairro Centro,True,2.0,nova_solicitacao,,,
+8,6.0,catador,2025-06-29 11:05:00,Nova solicitação de coleta no bairro Varginha,True,5.0,nova_solicitacao,,,
+9,7.0,catador,2025-06-26 14:45:00,Nova solicitação de coleta no bairro Morro Chic,True,6.0,nova_solicitacao,,,
+10,5.0,morador,2025-06-28 10:05:00,Sua solicitação de coleta foi realizada com sucesso,False,6.0,coleta_realizada,,,
+11,2.0,catador,2025-06-30 09:05:00,Nova solicitação de coleta no bairro Centro,True,7.0,nova_solicitacao,,,
+12,4.0,morador,2025-06-25 15:50:00,Sua solicitação de coleta foi realizada com sucesso,True,8.0,coleta_realizada,,,
+13,7.0,catador,2025-06-29 15:25:00,Nova solicitação de coleta no bairro Morro Chic,True,9.0,nova_solicitacao,,,
+14,6.0,catador,2025-06-23 10:15:00,Nova solicitação de coleta no bairro Centro,True,10.0,nova_solicitacao,,,
+15,1.0,morador,2025-06-24 14:25:00,Sua solicitação de coleta foi realizada com sucesso,True,10.0,coleta_realizada,,,
+16,1.0,morador,2025-07-01 15:40:35,O catador Catador Teste aceitou sua solicitação de coleta,True,,,Solicitação de coleta aceita!,,
+17,4.0,morador,2025-07-01 15:40:46,O catador Catador Teste aceitou sua solicitação de coleta,False,,,Solicitação de coleta aceita!,,
+18,8.0,morador,2025-07-01 17:05:44,"Olá Daniel Jose Machado, seu cadastro foi realizado com sucesso. Sua senha padrão é ""123"". Recomendamos que altere sua senha no primeiro acesso.",False,,,Bem-vindo ao Sistema de Coleta Seletiva Conectada,,
+19,8.0,morador,2025-07-01 17:06:04,"Sua senha foi redefinida pelo administrador para ""123"".",False,,,Sua senha foi redefinida,,
+20,7.0,catador,2025-07-01 17:06:10,"Sua senha foi redefinida pelo administrador para ""123"".",True,,,Sua senha foi redefinida,,
+21,7.0,catador,2025-07-01 17:07:33,Você recebeu uma nova solicitação de coleta de Daniel Jose Machado no bairro Varginha.,True,15.0,nova_solicitacao,Nova solicitação de coleta,,
+22,5.0,morador,2025-07-01 17:08:57,O catador Ana Santos aceitou sua solicitação de coleta para o dia 10/07/2025.,False,,,Solicitação de coleta aceita!,,
+23,3.0,admin,2025-07-01 19:48:14,"Sua senha foi redefinida pelo administrador para ""123"".",False,,,Sua senha foi redefinida,,
+24,1.0,morador,2025-07-01 19:51:18,"Sua senha foi redefinida pelo administrador para ""123"".",True,,,Sua senha foi redefinida,,
+25,17.0,catador,2025-07-01 20:28:57,Você recebeu uma nova solicitação de coleta de Morador Teste no bairro Centro.,True,51.0,nova_solicitacao,Nova solicitação de coleta,,
+26,2.0,catador,2025-07-02 11:26:24,Você recebeu uma nova solicitação de coleta de Morador Teste no bairro Centro.,True,52.0,nova_solicitacao,Nova solicitação de coleta,,
+27,1.0,morador,2025-07-02 11:27:40,O catador Catador Teste aceitou sua solicitação de coleta para o dia 2025-07-02 às 11:25.,True,,,Solicitação de coleta aceita!,,
+28,1.0,morador,2025-07-02 11:28:01,O catador Catador Teste concluiu a coleta agendada. Peso total coletado: 3.0 kg.,True,,,Coleta concluída com sucesso!,,
+29,1.0,morador,2025-07-02 11:28:13,O catador Catador Teste concluiu a coleta agendada para 2025-07-02. Peso total coletado: 8.0 kg.,True,,,Coleta concluída com sucesso!,,
+30,4.0,morador,2025-07-02 16:57:19,O catador Catador Teste concluiu a coleta agendada. Peso total coletado: 8.0 kg.,False,,,Coleta concluída com sucesso!,,
+31,1.0,morador,2025-07-02 16:57:29,O catador Catador Teste concluiu a coleta agendada. Peso total coletado: 1.0 kg.,True,,,Coleta concluída com sucesso!,,
+32,7.0,catador,2025-07-02 17:56:44,Você recebeu uma nova solicitação de coleta de Morador Teste no bairro Centro.,True,53.0,nova_solicitacao,Nova solicitação de coleta,,
+33,6.0,catador,2025-07-02 17:57:35,Você recebeu uma nova solicitação de coleta de Morador Teste no bairro Centro.,False,54.0,nova_solicitacao,Nova solicitação de coleta,,
+34,6.0,catador,2025-07-02 17:57:51,Você recebeu uma nova solicitação de coleta de Morador Teste no bairro Centro.,False,55.0,nova_solicitacao,Nova solicitação de coleta,,
+35,6.0,catador,2025-07-02 17:58:13,Você recebeu uma nova solicitação de coleta de Morador Teste no bairro Centro.,False,56.0,nova_solicitacao,Nova solicitação de coleta,,
+36,2.0,catador,2025-07-02 17:59:40,Você recebeu uma nova solicitação de coleta de Morador Teste no bairro Centro.,True,57.0,nova_solicitacao,Nova solicitação de coleta,,
+37,6.0,catador,2025-07-02 18:02:33,Você recebeu uma nova solicitação de coleta de Morador Teste no bairro Centro.,False,58.0,nova_solicitacao,Nova solicitação de coleta,,
+38,1.0,morador,2025-07-03 08:05:44,"O catador Catador Teste não pôde aceitar sua solicitação de coleta para o dia 2025-07-02. Por favor, tente novamente com outro catador ou em outra data.",True,,,Solicitação de coleta recusada,,
+39,5.0,morador,2025-07-03 20:32:13,O catador Ana Santos concluiu a coleta #9 com sucesso. Peso total coletado: 1.0 kg.,False,,,Coleta concluída!,,
+40,2.0,catador,2025-07-05 11:07:12,Você recebeu uma nova solicitação de coleta de Maria das Graças no bairro Centro.,False,60.0,nova_solicitacao,Nova solicitação de coleta,,
+41,1.0,morador,2025-07-05 11:17:34,O catador Ana Santos aceitou sua solicitação de coleta #11. Ele entrará em contato em breve.,False,,,Coleta aceita!,,
+42,1.0,morador,2025-07-05 11:17:37,O catador Ana Santos aceitou sua solicitação de coleta #13. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
+43,8.0,morador,2025-07-05 11:19:51,O catador Ana Santos aceitou sua solicitação de coleta #15. Ele entrará em contato em breve.,False,,,Coleta aceita!,,
+44,1.0,morador,2025-07-05 11:22:53,O catador Ana Santos aceitou sua solicitação de coleta #59. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
+45,5.0,morador,2025-07-05 11:26:02,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+46,5.0,morador,2025-07-05 11:26:02,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+47,5.0,morador,2025-07-05 11:26:02,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+48,5.0,morador,2025-07-05 11:26:03,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+49,5.0,morador,2025-07-05 11:26:03,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+50,5.0,morador,2025-07-05 11:26:03,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+51,5.0,morador,2025-07-05 11:26:03,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+52,5.0,morador,2025-07-05 11:26:03,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+53,5.0,morador,2025-07-05 11:26:03,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+54,5.0,morador,2025-07-05 11:26:03,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+55,5.0,morador,2025-07-05 11:26:03,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+56,5.0,morador,2025-07-05 11:26:04,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+57,5.0,morador,2025-07-05 11:26:04,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+58,5.0,morador,2025-07-05 11:26:04,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+59,5.0,morador,2025-07-05 11:26:04,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+60,5.0,morador,2025-07-05 11:26:04,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+61,5.0,morador,2025-07-05 11:26:04,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+62,5.0,morador,2025-07-05 11:26:04,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+63,5.0,morador,2025-07-05 11:26:05,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+64,5.0,morador,2025-07-05 11:26:05,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+65,5.0,morador,2025-07-05 11:26:05,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+66,5.0,morador,2025-07-05 11:26:05,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+67,5.0,morador,2025-07-05 11:26:05,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+68,5.0,morador,2025-07-05 11:26:05,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+69,5.0,morador,2025-07-05 11:26:05,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+70,5.0,morador,2025-07-05 11:26:06,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+71,5.0,morador,2025-07-05 11:26:06,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+72,5.0,morador,2025-07-05 11:26:06,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+73,5.0,morador,2025-07-05 11:26:06,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+74,5.0,morador,2025-07-05 11:26:06,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+75,5.0,morador,2025-07-05 11:26:06,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+76,5.0,morador,2025-07-05 11:26:07,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+77,5.0,morador,2025-07-05 11:26:07,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+78,5.0,morador,2025-07-05 11:26:07,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+79,5.0,morador,2025-07-05 11:26:07,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+80,5.0,morador,2025-07-05 11:26:07,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+81,5.0,morador,2025-07-05 11:26:07,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+82,5.0,morador,2025-07-05 11:26:08,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+83,5.0,morador,2025-07-05 11:26:08,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+84,5.0,morador,2025-07-05 11:26:08,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+85,5.0,morador,2025-07-05 11:26:08,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+86,5.0,morador,2025-07-05 11:26:08,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+87,5.0,morador,2025-07-05 11:26:08,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+88,5.0,morador,2025-07-05 11:26:09,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+89,5.0,morador,2025-07-05 11:26:09,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+90,5.0,morador,2025-07-05 11:26:09,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+91,5.0,morador,2025-07-05 11:26:09,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+92,5.0,morador,2025-07-05 11:26:09,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+93,5.0,morador,2025-07-05 11:26:10,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+94,5.0,morador,2025-07-05 11:26:10,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+95,5.0,morador,2025-07-05 11:26:10,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+96,5.0,morador,2025-07-05 11:26:10,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+97,5.0,morador,2025-07-05 11:26:10,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+98,5.0,morador,2025-07-05 11:26:10,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+99,5.0,morador,2025-07-05 11:26:11,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+100,5.0,morador,2025-07-05 11:26:11,"Catador: Oi maria, vou passar aí depois para pegar.",False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+101,1.0,morador,2025-07-05 11:30:18,Catador: OI Maria,True,2.0,chat_coleta,Mensagem sobre coleta #2,2.0,catador
+102,1.0,morador,2025-07-05 11:30:19,Catador: OI Maria,True,2.0,chat_coleta,Mensagem sobre coleta #2,2.0,catador
+103,1.0,morador,2025-07-05 11:30:30,"Catador: Passo aí depois, obrigado",True,2.0,chat_coleta,Mensagem sobre coleta #2,2.0,catador
+104,1.0,morador,2025-07-05 11:30:31,"Catador: Passo aí depois, obrigado",True,2.0,chat_coleta,Mensagem sobre coleta #2,2.0,catador
+105,2.0,catador,2025-07-05 11:39:24,"Morador: Tá joia, obrigado",False,2.0,chat_coleta,Mensagem sobre coleta #2,1.0,morador
+106,2.0,catador,2025-07-05 11:39:24,"Morador: Tá joia, obrigado",False,2.0,chat_coleta,Mensagem sobre coleta #2,1.0,morador
+107,1.0,morador,2025-07-05 11:42:37,O catador Benedito Luiz aceitou sua solicitação de coleta #60. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
+108,1.0,morador,2025-07-05 11:45:04,O catador Ana Santos aceitou sua solicitação de coleta #53. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
+109,5.0,morador,2025-07-05 11:45:22,Catador: Obrigado Maria,False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+110,5.0,morador,2025-07-05 11:45:22,Catador: Obrigado Maria,False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
+111,1.0,morador,2025-07-05 11:45:56,O catador Carlos Ferreira aceitou sua solicitação de coleta #12. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
+112,1.0,morador,2025-07-05 11:45:57,O catador Carlos Ferreira aceitou sua solicitação de coleta #14. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
+113,1.0,morador,2025-07-05 11:45:58,O catador Carlos Ferreira aceitou sua solicitação de coleta #54. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
+114,1.0,morador,2025-07-05 11:45:59,O catador Carlos Ferreira aceitou sua solicitação de coleta #55. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
+115,1.0,morador,2025-07-05 11:46:01,O catador Carlos Ferreira aceitou sua solicitação de coleta #56. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
+116,1.0,morador,2025-07-05 11:46:06,O catador Carlos Ferreira aceitou sua solicitação de coleta #58. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
+117,1.0,morador,2025-07-05 11:46:20,"Catador: Hoje a tarde eu passo aí, maria",True,12.0,chat_coleta,Mensagem sobre coleta #12,6.0,catador
+118,1.0,morador,2025-07-05 11:46:20,"Catador: Hoje a tarde eu passo aí, maria",True,12.0,chat_coleta,Mensagem sobre coleta #12,6.0,catador

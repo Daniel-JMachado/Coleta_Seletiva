@@ -1,0 +1,627 @@
+/* 
+   CSS específico para o painel do catador
+   Inclui estilos para cards, estatísticas, tabs e formulários
+*/
+
+/* Estilos gerais do painel do catador */
+.catador-header {
+    color: #2e8b57;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.catador-welcome-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    border-left: 5px solid #2e8b57;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.catador-welcome-card .catador-header {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #2e8b57;
+    padding-bottom: 0.5rem;
+}
+
+.catador-welcome-card h2 {
+    color: #2e8b57;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.catador-welcome-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.catador-section-title {
+    color: #2e8b57;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Cards de estatísticas */
+.catador-stat-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.catador-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.catador-stat-card h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+}
+
+.catador-stat-card p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.catador-stat-total {
+    border-top: 4px solid #3498db;
+}
+
+.catador-stat-total h3 {
+    color: #3498db;
+}
+
+.catador-stat-pending {
+    border-top: 4px solid #f39c12;
+}
+
+.catador-stat-pending h3 {
+    color: #f39c12;
+}
+
+.catador-stat-completed {
+    border-top: 4px solid #2ecc71;
+}
+
+.catador-stat-completed h3 {
+    color: #2ecc71;
+}
+
+/* Cards de solicitação */
+.catador-solicitacao-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left: 5px solid #2e8b57;
+    transition: transform 0.2s;
+}
+
+.catador-solicitacao-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.catador-solicitacao-card h4 {
+    color: #2e8b57;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.catador-solicitacao-card p {
+    margin-bottom: 8px;
+}
+
+.catador-solicitacao-card strong {
+    color: #333;
+}
+
+/* Cards de notificação */
+.catador-notificacao-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    border-left: 4px solid #95a5a6;
+    background-color: #f9f9f9;
+    opacity: 0.85;
+    transition: transform 0.2s;
+}
+
+.catador-notificacao-card-nova {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    border-left: 4px solid #3498db;
+    transition: transform 0.2s;
+}
+
+.catador-notificacao-card:hover,
+.catador-notificacao-card-nova:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+.catador-notificacao-card h4,
+.catador-notificacao-card-nova h4 {
+    color: #3498db;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.catador-notificacao-card.notification-read h4 {
+    color: #7f8c8d;
+}
+
+.catador-notificacao-card p,
+.catador-notificacao-card-nova p {
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.catador-notificacao-card small,
+.catador-notificacao-card-nova small {
+    display: block;
+    text-align: right;
+    color: #777;
+    font-style: italic;
+}
+
+/* Cards de conteúdo educativo */
+.catador-article-card, .catador-tip-card, .catador-material-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.catador-article-card h3, .catador-tip-card h4, .catador-material-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.catador-article-content, .catador-tip-card p {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.catador-article-footer {
+    font-style: italic;
+    color: #666;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.catador-material-section {
+    margin: 15px 0;
+}
+
+.catador-material-section h4 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.catador-material-section ul {
+    margin-left: 20px;
+}
+
+.material-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    min-width: 200px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    color: #555;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.stat-card .value {
+    color: #2e8b57;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card .description {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Cards de coletas */
+.coleta-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #2e8b57;
+    transition: transform 0.2s;
+}
+
+.coleta-card:hover {
+    transform: translateY(-3px);
+}
+
+.coleta-card.pendente {
+    border-left-color: #ffc107;
+}
+
+.coleta-card.concluida {
+    border-left-color: #28a745;
+}
+
+.coleta-card.cancelada {
+    border-left-color: #dc3545;
+}
+
+.coleta-card h3 {
+    color: #2e8b57;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.coleta-card .info-label {
+    color: #555;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.coleta-card .info-value {
+    color: #333;
+}
+
+.coleta-card .actions {
+    margin-top: 1rem;
+}
+
+/* Status das coletas */
+.coleta-status {
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.coleta-status.pendente {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.coleta-status.concluida {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.coleta-status.cancelada {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Cards de notificação */
+.notificacao-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #007bff;
+}
+
+.notificacao-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.notificacao-card.nao-lida {
+    background-color: #f8f9fa;
+    border-left-color: #28a745;
+}
+
+.notificacao-card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.notificacao-card .time {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.notificacao-card .content {
+    color: #495057;
+    line-height: 1.5;
+}
+
+.notificacao-card .actions {
+    margin-top: 0.5rem;
+    text-align: right;
+}
+
+/* Botões personalizados */
+.catador-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.catador-btn:hover {
+    transform: translateY(-2px);
+}
+
+.catador-btn.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.catador-btn.primary:hover {
+    background-color: #0056b3;
+}
+
+.catador-btn.secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.catador-btn.secondary:hover {
+    background-color: #545b62;
+}
+
+.catador-btn.danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.catador-btn.danger:hover {
+    background-color: #c82333;
+}
+
+/* Cards de bairro */
+.bairro-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #2e8b57;
+}
+
+.bairro-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.bairro-card h3 {
+    color: #2e8b57;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.bairro-card .estatisticas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.bairro-card .estatistica {
+    text-align: center;
+}
+
+.bairro-card .estatistica .valor {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2e8b57;
+}
+
+.bairro-card .estatistica .label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+    }
+    
+    .stat-card {
+        min-width: 100%;
+    }
+    
+    .coleta-card .actions {
+        flex-direction: column;
+    }
+    
+    .bairro-card .estatisticas {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para o perfil do catador */
+.profile-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-header {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    color: white;
+    box-shadow: 0 8px 32px rgba(52, 152, 219, 0.2);
+}
+
+.profile-header h1 {
+    margin: 0 0 20px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.profile-header p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.profile-photo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-title {
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* Estilos para formulários de edição */
+.stForm {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    margin-top: 20px;
+}
+
+.stForm .stButton button {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stForm .stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+}
+
+/* Estilos para expander */
+.streamlit-expander {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.streamlit-expander .streamlit-expanderHeader {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 15px 20px;
+    border-radius: 12px 12px 0 0;
+    font-weight: 600;
+    color: #3498db;
+}
+
+.streamlit-expander .streamlit-expanderContent {
+    padding: 20px;
+}
+
+/* Animações para cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-container > div {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 15px;
+    }
+    
+    .profile-header {
+        padding: 20px;
+    }
+    
+    .profile-header h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-title {
+        font-size: 1.8rem;
+    }
+}

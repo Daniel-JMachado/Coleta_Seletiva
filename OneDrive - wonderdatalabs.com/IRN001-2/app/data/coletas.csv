@@ -1,0 +1,66 @@
+id,morador_id,catador_id,data_solicitacao,data_coleta,status,bairro,endereco,tipos_materiais,observacoes,quantidade_estimada,avaliacao,horario_coleta,materiais,peso_kg,data_conclusao
+1,1,2.0,2025-06-25 10:15:00,2025-06-27 14:00:00,concluida,Centro,Rua das Flores 123,"Papel, Plástico",Material separado em sacos,5kg,5.0,14:00,"Papel, Plástico",5.0,2025-06-27
+2,1,2.0,2025-06-28 14:30:00,,concluida,Centro,Rua das Flores 123,"Vidro, Metal",Garrafas e latas,3kg,,,"Vidro, Metal",3.0,2025-07-02 11:28:01
+3,4,6.0,2025-06-20 09:45:00,2025-06-22 11:30:00,concluida,Varginha,Av. Principal 456,Papel,Caixas de papelão desmontadas,10kg,4.0,11:30,Papel,10.0,2025-06-22
+4,5,7.0,2025-06-22 16:20:00,2025-06-24 13:15:00,concluida,Morro Chic,Rua Secundária 789,"Plástico, Metal",Separados por tipo,7kg,5.0,13:15,"Plástico, Metal",7.0,2025-06-24
+5,4,2.0,2025-06-29 11:00:00,,concluida,Varginha,Av. Principal 456,"Vidro, Papel, Plástico",Material misturado,8kg,,,"Vidro, Papel, Plástico",8.0,2025-07-02 16:57:19
+6,5,7.0,2025-06-26 14:40:00,2025-06-28 10:00:00,concluida,Morro Chic,Rua Secundária 789,Metal,Latas de alumínio,2kg,4.0,10:00,Metal,2.0,2025-06-28
+7,1,2.0,2025-06-30 09:00:00,,concluida,Centro,Rua das Flores 123,Eletrônicos,Baterias e carregadores,1kg,,,Eletrônicos,1.0,2025-07-02 16:57:29
+8,4,2.0,2025-06-24 13:30:00,2025-06-25 15:45:00,concluida,Varginha,Av. Principal 456,"Papel, Plástico, Metal",Todos limpos e separados,12kg,5.0,15:45,"Papel, Plástico, Metal",12.0,2025-06-25
+9,5,7.0,2025-06-29 15:20:00,,concluida,Morro Chic,Rua Secundária 789,Vidro,Tinha mais de um kg,4kg,,,Vidro,1.0,2025-07-03
+10,1,6.0,2025-06-23 10:10:00,2025-06-24 14:20:00,concluida,Centro,Rua das Flores 123,Plástico,PET e embalagens,6kg,4.0,14:20,Plástico,6.0,2025-06-24
+11,1,7.0,2025-07-01 10:58:21,2025-07-01 10:58:00,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico",,6kg,,10:58,"Papel/Papelão, Plástico",6.0,2025-07-05
+12,1,6.0,2025-07-01 10:59:07,2025-07-01 07:15:00,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico",tem bastante,5kg,,07:15,"Papel/Papelão, Plástico",5.0,2025-07-05
+13,1,7.0,2025-07-01 11:30:35,2025-07-01 12:00:00,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico, Metal",vem com mais gente,5kg,,12:00,"Papel/Papelão, Plástico, Metal",5.0,2025-07-05
+14,1,6.0,2025-07-01 16:37:57,2025-07-03 08:00:00,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico, Eletrônicos",bastante material,7kg,,08:00,"Papel/Papelão, Plástico, Eletrônicos",7.0,2025-07-05
+15,8,7.0,2025-07-01 17:07:33,2025-07-01 13:00:00,concluida,Varginha,Rua José Francisco Pereira 268,Plástico,Daniel solicitando coleta,5kg,,13:00,Plástico,5.0,2025-07-05
+16,9,10.0,2025-07-02 09:30:00,2025-07-04 13:00:00,concluida,Varginha,Rua das Flores 123,Papel,Jornais e revistas,3kg,5.0,13:00,Papel,3.0,2025-07-04
+17,10,12.0,2025-07-03 10:15:00,2025-07-05 14:00:00,concluida,Morro Chic,Av. BPS 300,Plástico,Garrafas PET,6kg,4.0,14:00,Plástico,6.0,2025-07-05
+18,11,13.0,2025-07-04 14:00:00,2025-07-06 10:45:00,concluida,Boa Vista,Rua Aurora 234,"Metal, Plástico",Latas e embalagens,8kg,4.0,10:45,"Metal, Plástico",8.0,2025-07-06
+19,12,14.0,2025-07-05 12:20:00,2025-07-07 09:00:00,concluida,Pinheirinho,Rua Silvério Siqueira 99,Plástico,Embalagens separadas,4kg,5.0,09:00,Plástico,4.0,2025-07-07
+20,13,15.0,2025-07-06 08:50:00,2025-07-08 16:30:00,concluida,Medicina,Rua Francisca Nogueira 421,"Papel, Metal",Recolher no portão,5kg,5.0,16:30,"Papel, Metal",5.0,2025-07-08
+21,14,10.0,2025-07-07 11:45:00,2025-07-09 11:00:00,concluida,Santo Antônio,Rua Nova 100,Vidro,Potes e garrafas,2kg,4.0,11:00,Vidro,2.0,2025-07-09
+22,15,11.0,2025-07-07 16:30:00,2025-07-09 10:00:00,concluida,São Vicente,Rua do Comércio 150,"Papel, Plástico",Papéis de escritório,7kg,4.0,10:00,"Papel, Plástico",7.0,2025-07-09
+23,16,12.0,2025-07-08 13:20:00,2025-07-10 14:30:00,concluida,Boa Vista,Av. Cel. Carneiro Junior 321,Metal,Latinhas de refrigerante,3kg,5.0,14:30,Metal,3.0,2025-07-10
+24,17,13.0,2025-07-09 15:10:00,2025-07-11 12:20:00,concluida,Rebourgeon,Rua Capitão Gomes 208,"Vidro, Plástico",Garrafas diversas,6kg,5.0,12:20,"Vidro, Plástico",6.0,2025-07-11
+25,18,14.0,2025-07-10 09:45:00,2025-07-12 08:00:00,concluida,Nossa Senhora de Fátima,Rua Olga Carnevalli 85,Plástico,Potes limpos,4kg,4.0,08:00,Plástico,4.0,2025-07-12
+26,19,15.0,2025-07-11 12:00:00,2025-07-13 15:00:00,concluida,Varginha,Av. João Antonio Pereira 444,Papelão,Caixas grandes,10kg,4.0,15:00,Papelão,10.0,2025-07-13
+27,20,10.0,2025-07-12 11:10:00,2025-07-14 10:00:00,concluida,São Judas,Rua Quirino dos Santos 56,Metal,Latas de aço,3kg,4.0,10:00,Metal,3.0,2025-07-14
+28,21,11.0,2025-07-13 15:30:00,2025-07-15 14:00:00,concluida,Avenida,Rua Antônio Simões 176,"Plástico, Eletrônicos",Aparelhos quebrados,5kg,5.0,14:00,"Plástico, Eletrônicos",5.0,2025-07-15
+29,22,12.0,2025-07-14 10:00:00,2025-07-16 09:30:00,concluida,Morro Chic,Av. dos Ferroviários 299,Papel,Papéis para reciclar,2kg,4.0,09:30,Papel,2.0,2025-07-16
+30,23,13.0,2025-07-15 16:45:00,2025-07-17 09:20:00,concluida,Pinheirinho,Rua José Augusto dos Santos 50,"Vidro, Metal",Garrafas e latas,6kg,4.0,09:20,"Vidro, Metal",6.0,2025-07-17
+31,1,9.0,2025-07-03 09:00:00,2025-07-04 14:00:00,concluida,Centro,Rua das Flores 123,Papel,Separado em caixas,3kg,5.0,14:00,"Papel, Papelão",3.0,2025-07-04
+32,4,6.0,2025-07-02 14:05:00,2025-07-02 17:00:00,concluida,Varginha,Av. Principal 456,Metal,Latas de alumínio,2kg,5.0,17:00,Metal,2.0,2025-07-02
+33,5,7.0,2025-07-04 10:00:00,2025-07-05 09:30:00,concluida,Morro Chic,Rua Secundária 789,Plástico,Garrafas PET,6kg,4.0,09:30,Plástico,6.0,2025-07-05
+34,8,16.0,2025-07-06 13:30:00,2025-07-08 15:00:00,concluida,Varginha,Rua José Francisco Pereira 268,Eletrônicos,Baterias diversas,3kg,4.0,15:00,Eletrônicos,3.0,2025-07-08
+35,19,10.0,2025-07-06 11:10:00,2025-07-08 10:20:00,concluida,Varginha,Av. João Antonio Pereira 444,Vidro,Garrafas de suco,4kg,5.0,10:20,Vidro,4.0,2025-07-08
+36,20,13.0,2025-07-07 16:15:00,2025-07-09 13:00:00,concluida,São Judas,Rua Quirino dos Santos 56,Papelão,Caixas de entrega,8kg,5.0,13:00,Papelão,8.0,2025-07-09
+37,21,11.0,2025-07-09 08:05:00,2025-07-11 15:15:00,concluida,São Vicente,Rua do Comércio 200,Plástico,Potes limpos,5kg,5.0,15:15,Plástico,5.0,2025-07-11
+38,22,12.0,2025-07-09 12:30:00,2025-07-11 09:00:00,concluida,Morro Chic,Av. dos Ferroviários 299,"Metal, Papel",Papéis e latinhas,3kg,4.0,09:00,"Metal, Papel",3.0,2025-07-11
+39,23,14.0,2025-07-10 09:45:00,2025-07-12 15:00:00,concluida,Pinheirinho,Rua José Augusto dos Santos 50,Papel,Jornais antigos,7kg,4.0,15:00,Papel,7.0,2025-07-12
+40,24,15.0,2025-07-11 13:20:00,2025-07-13 16:10:00,concluida,Boa Vista,Rua Luiz Giarola 18,Metal,Tampas metálicas,1kg,5.0,16:10,Metal,1.0,2025-07-13
+41,25,18.0,2025-07-12 08:40:00,2025-07-14 10:30:00,concluida,Rebourgeon,Rua Nova 234,Plástico,Restos de embalagens,2kg,4.0,10:30,Plástico,2.0,2025-07-14
+42,26,17.0,2025-07-13 15:30:00,2025-07-13 19:00:00,concluida,Santo Antônio,Av. Santo Antônio 111,Eletrônicos,Cabos de energia,3kg,4.0,19:00,Eletrônicos,3.0,2025-07-13
+43,27,13.0,2025-07-13 20:15:00,2025-07-15 14:00:00,concluida,Medicina,Rua Dr. Xavier Lisboa 55,Metal,Arames,4kg,4.0,14:00,Metal,4.0,2025-07-15
+44,28,12.0,2025-07-14 10:05:00,2025-07-16 08:35:00,concluida,São Vicente,Rua Rio de Janeiro 72,Vidro,Potes de conserva,2kg,5.0,08:35,Vidro,2.0,2025-07-16
+45,29,16.0,2025-07-16 11:45:00,2025-07-18 11:00:00,concluida,Varginha,Rua das Laranjeiras 73,Papel,Cadernos velhos,5kg,4.0,11:00,Papel,5.0,2025-07-18
+46,30,17.0,2025-07-17 10:30:00,2025-07-18 13:45:00,concluida,São Judas,Av. Dr. João Batista Alves 200,Papelão,Caixas desmontadas,6kg,5.0,13:45,Papelão,6.0,2025-07-18
+47,31,11.0,2025-07-17 14:15:00,2025-07-19 09:00:00,concluida,Avenida,Rua Benedito Cruz 16,Plástico,Potes diversos,2kg,4.0,09:00,Plástico,2.0,2025-07-19
+48,1,15.0,2025-07-18 08:20:00,2025-07-18 12:50:00,concluida,Centro,Rua das Flores 123,Papel,Cupons fiscais,1kg,4.0,12:50,Papel,1.0,2025-07-18
+49,4,14.0,2025-07-18 15:00:00,2025-07-20 14:00:00,concluida,Varginha,Av. Principal 456,Plástico,Garrafas squeeze,3kg,4.0,14:00,Plástico,3.0,2025-07-20
+50,5,13.0,2025-07-19 09:40:00,2025-07-21 09:30:00,concluida,Morro Chic,Rua Secundária 789,Metal,Peças pequenas,4kg,5.0,09:30,Metal,4.0,2025-07-21
+51,1,17.0,2025-07-01 20:28:57,2025-07-01,pendente,Centro,Rua das Flores 123,Eletrônicos,,15kg,,20:28,,0.0,
+52,1,2.0,2025-07-02 11:26:24,2025-07-02,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico",Favor retirar amanhã,8kg,,11:25,,8.0,2025-07-02 11:28:13
+53,1,7.0,2025-07-02 17:56:44,2025-07-03,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico, Outros, Metal, Vidro, Eletrônicos","Vem todo mundo, pois teremos muito",16kg,,17:55,,0.0,2025-07-05
+54,1,6.0,2025-07-02 17:57:35,2025-07-02,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico",teste2,5kg,,17:57,,0.0,2025-07-05
+55,1,6.0,2025-07-02 17:57:51,2025-07-02,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico",teste2,5kg,,17:57,,0.0,2025-07-05
+56,1,6.0,2025-07-02 17:58:13,2025-07-02,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico",teste4,5kg,,17:58,,0.0,2025-07-05
+57,1,2.0,2025-07-02 17:59:40,2025-07-02,pendente,Centro,Rua das Flores 123,"Papel/Papelão, Plástico, Outros, Eletrônicos",teste5,15kg,,17:59,,0.0,
+58,1,6.0,2025-07-02 18:02:33,2025-07-02,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico",dfgdsfgdfsg,5kg,,18:02,,0.0,2025-07-05
+59,1,7.0,2025-07-03 20:34:03,2025-07-03,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico",bastante papelão,14kg,,20:33,,0.0,2025-07-05
+60,1,2.0,2025-07-05 11:07:12,2025-07-07,concluida,Centro,Rua das Flores 123,"Papel/Papelão, Plástico, Eletrônicos, Metal","tem mais metal, latinha e garrafas pet",7kg,,07:00,,0.0,2025-07-05
+61,5,7.0,2025-07-20 14:30:00,2025-07-22,pendente,Morro Chic,Rua Secundária 789,"Papel/Papelão, Plástico",Coleta da semana,6kg,,14:30,,0.0,
+62,8,10.0,2025-07-20 16:45:00,2025-07-21,pendente,Varginha,Rua José Francisco Pereira 268,Metal,Muitas latas,3kg,,16:45,,0.0,
+63,14,15.0,2025-07-21 09:00:00,2025-07-23,pendente,Santo Antônio,Rua Nova 100,"Vidro, Plástico",Garrafas e embalagens,5kg,,09:00,,0.0,
+64,20,13.0,2025-07-21 11:30:00,2025-07-24,pendente,São Judas,Rua Quirino dos Santos 56,"Papel/Papelão, Eletrônicos",Caixas e equipamentos,8kg,,11:30,,0.0,
+65,23,12.0,2025-07-21 15:20:00,2025-07-25,pendente,Pinheirinho,Rua José Augusto dos Santos 50,Plástico,Embalagens da semana,4kg,,15:20,,0.0,

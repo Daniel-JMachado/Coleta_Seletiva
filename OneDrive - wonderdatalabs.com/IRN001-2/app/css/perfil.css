@@ -1,0 +1,153 @@
+/* 
+   CSS para o perfil do usuário (compartilhado por todos os tipos de usuário)
+*/
+
+.perfil-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.perfil-foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    overflow: hidden;
+    margin-right: 2rem;
+    border: 3px solid #2e8b57;
+}
+
+.perfil-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-info {
+    flex: 1;
+}
+
+.perfil-nome {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2e8b57;
+    margin-bottom: 0.5rem;
+}
+
+.perfil-tipo {
+    display: inline-block;
+    background-color: #e8f5e9;
+    color: #2e8b57;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.perfil-detalhe {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.perfil-detalhe-label {
+    font-weight: 600;
+    color: #555;
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.perfil-detalhe-valor {
+    color: #333;
+}
+
+.perfil-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #2e8b57;
+}
+
+.perfil-card h3 {
+    color: #2e8b57;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Estilos do formulário de edição de perfil */
+.perfil-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.perfil-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.perfil-form input, 
+.perfil-form textarea, 
+.perfil-form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.perfil-form input:focus, 
+.perfil-form textarea:focus, 
+.perfil-form select:focus {
+    border-color: #2e8b57;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(46, 139, 87, 0.2);
+}
+
+.perfil-form button {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.perfil-form button:hover {
+    background-color: #236b45;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .perfil-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .perfil-foto {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+    
+    .perfil-detalhe {
+        flex-direction: column;
+    }
+    
+    .perfil-detalhe-label {
+        width: 100%;
+        margin-bottom: 0.2rem;
+    }
+}
