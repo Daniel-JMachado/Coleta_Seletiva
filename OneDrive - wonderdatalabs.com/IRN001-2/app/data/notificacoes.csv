@@ -103,8 +103,8 @@ id,usuario_id,tipo_usuario,data,mensagem,lida,referencia_id,tipo,titulo,remetent
 102,1.0,morador,2025-07-05 11:30:19,Catador: OI Maria,True,2.0,chat_coleta,Mensagem sobre coleta #2,2.0,catador
 103,1.0,morador,2025-07-05 11:30:30,"Catador: Passo aí depois, obrigado",True,2.0,chat_coleta,Mensagem sobre coleta #2,2.0,catador
 104,1.0,morador,2025-07-05 11:30:31,"Catador: Passo aí depois, obrigado",True,2.0,chat_coleta,Mensagem sobre coleta #2,2.0,catador
-105,2.0,catador,2025-07-05 11:39:24,"Morador: Tá joia, obrigado",False,2.0,chat_coleta,Mensagem sobre coleta #2,1.0,morador
-106,2.0,catador,2025-07-05 11:39:24,"Morador: Tá joia, obrigado",False,2.0,chat_coleta,Mensagem sobre coleta #2,1.0,morador
+105,2.0,catador,2025-07-05 11:39:24,"Morador: Tá joia, obrigado",True,2.0,chat_coleta,Mensagem sobre coleta #2,1.0,morador
+106,2.0,catador,2025-07-05 11:39:24,"Morador: Tá joia, obrigado",True,2.0,chat_coleta,Mensagem sobre coleta #2,1.0,morador
 107,1.0,morador,2025-07-05 11:42:37,O catador Benedito Luiz aceitou sua solicitação de coleta #60. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
 108,1.0,morador,2025-07-05 11:45:04,O catador Ana Santos aceitou sua solicitação de coleta #53. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
 109,5.0,morador,2025-07-05 11:45:22,Catador: Obrigado Maria,False,9.0,chat_coleta,Mensagem sobre coleta #9,7.0,catador
@@ -117,3 +117,13 @@ id,usuario_id,tipo_usuario,data,mensagem,lida,referencia_id,tipo,titulo,remetent
 116,1.0,morador,2025-07-05 11:46:06,O catador Carlos Ferreira aceitou sua solicitação de coleta #58. Ele entrará em contato em breve.,True,,,Coleta aceita!,,
 117,1.0,morador,2025-07-05 11:46:20,"Catador: Hoje a tarde eu passo aí, maria",True,12.0,chat_coleta,Mensagem sobre coleta #12,6.0,catador
 118,1.0,morador,2025-07-05 11:46:20,"Catador: Hoje a tarde eu passo aí, maria",True,12.0,chat_coleta,Mensagem sobre coleta #12,6.0,catador
+119,1.0,morador,2025-07-08 11:22:12,O catador Benedito Luiz aceitou sua solicitação de coleta #57. Ele entrará em contato em breve.,False,,,Coleta aceita!,,
+120,2.0,catador,2025-07-08 12:47:23,"O morador Maria das Graças solicitou uma coleta para o dia 08/07/2025 (Manhã (8h às 12h)). Materiais: Plástico, Metal",False,,,Nova solicitação de coleta,,
+121,1.0,morador,2025-07-08 12:48:27,O catador Benedito Luiz aceitou sua solicitação de coleta para o dia 2025-07-08 às Manhã (8h às 12h).,True,,,Solicitação de coleta aceita!,,
+122,1.0,morador,2025-07-08 12:49:28,Catador: Obrigado D. Maria pelo aviso,True,60.0,chat_coleta,Mensagem sobre coleta #60,2.0,catador
+123,2.0,catador,2025-07-08 13:01:18,"O morador Maria das Graças solicitou uma coleta para o dia 09/07/2025 (Tarde (12h às 18h)). Materiais: Metal, Papel. Quantidade estimada: 3.0 kg",False,,,Nova solicitação de coleta,,
+124,1.0,morador,2025-07-08 13:03:14,O catador Benedito Luiz aceitou sua solicitação de coleta para o dia 2025-07-09 às Tarde (12h às 18h).,True,,,Solicitação de coleta aceita!,,
+125,2.0,catador,2025-07-08 13:04:37,O morador Maria das Graças solicitou uma coleta para o dia 08/07/2025 (Noite (18h às 20h)). Materiais: Plástico. Quantidade estimada: 10.0 kg,False,,,Nova solicitação de coleta,,
+126,7.0,catador,2025-07-08 13:05:03,O morador Maria das Graças solicitou uma coleta para o dia 17/07/2025 (Manhã (8h às 12h)). Materiais: Plástico. Quantidade estimada: 5.0 kg,False,,,Nova solicitação de coleta,,
+127,1.0,morador,2025-07-08 13:06:18,Catador: Hoje mesmo eu passo aí,False,60.0,chat_coleta,Mensagem sobre coleta #60,2.0,catador
+128,32.0,catador,2025-07-08 13:12:52,"Olá usuário teste 3, seu cadastro foi realizado com sucesso. Sua senha padrão é ""123"". Recomendamos que altere sua senha no primeiro acesso.",False,,,Bem-vindo ao Sistema de Coleta Seletiva Conectada,,

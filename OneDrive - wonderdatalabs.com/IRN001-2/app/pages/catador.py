@@ -182,12 +182,19 @@ class CatadorPage:
                 morador_nome = morador_row['nome'].iloc[0] if not morador_row.empty else "Morador não encontrado"
                 morador_endereco = morador_row['endereco'].iloc[0] if 'endereco' in morador_row.columns else "Endereço não especificado"
                 
+                # Formatar quantidade estimada
+                quantidade_estimada = coleta.get('quantidade_estimada', coleta.get('peso_kg', 'Não especificada'))
+                if str(quantidade_estimada).replace('.', '').isdigit():
+                    quantidade_text = f"{quantidade_estimada} kg"
+                else:
+                    quantidade_text = str(quantidade_estimada)
+                
                 st.markdown(f"""
                 <div class='catador-solicitacao-card'>
                     <h4>Solicitação de {morador_nome}</h4>
                     <p><strong>Data solicitada:</strong> {coleta['data_coleta']} às {coleta['horario_coleta']}</p>
-                    <p><strong>Materiais:</strong> {coleta['materiais']}</p>
-                    <p><strong>Quantidade estimada:</strong> {coleta['quantidade_estimada']} kg</p>
+                    <p><strong>Materiais:</strong> {coleta.get('tipos_materiais', coleta.get('materiais', 'Não especificado'))}</p>
+                    <p><strong>Quantidade estimada:</strong> {quantidade_text}</p>
                 </div>
                 """, unsafe_allow_html=True)
                 
@@ -447,6 +454,13 @@ class CatadorPage:
             morador_endereco = morador_row['endereco'].iloc[0] if 'endereco' in morador_row.columns and not morador_row.empty else "Endereço não especificado"
             morador_bairro = morador_row['bairro'].iloc[0] if 'bairro' in morador_row.columns and not morador_row.empty else "Bairro não especificado"
             
+            # Formatar quantidade estimada
+            quantidade_estimada = coleta.get('quantidade_estimada', coleta.get('peso_kg', 'Não especificada'))
+            if str(quantidade_estimada).replace('.', '').isdigit():
+                quantidade_text = f"{quantidade_estimada} kg"
+            else:
+                quantidade_text = str(quantidade_estimada)
+            
             st.markdown(f"""
             <div class='catador-solicitacao-card'>
                 <h4>Solicitação #{coleta['id']} - {morador_nome}</h4>
@@ -454,7 +468,7 @@ class CatadorPage:
                     <p><strong>Local:</strong> {morador_bairro} - {morador_endereco}</p>
                     <p><strong>Data solicitada:</strong> {coleta['data_coleta']} às {coleta['horario_coleta']}</p>
                     <p><strong>Materiais:</strong> {coleta.get('tipos_materiais', coleta.get('materiais', 'Não especificado'))}</p>
-                    <p><strong>Quantidade estimada:</strong> {coleta['quantidade_estimada']}</p>
+                    <p><strong>Quantidade estimada:</strong> {quantidade_text}</p>
                 </div>
             </div>
             """, unsafe_allow_html=True)
@@ -670,7 +684,7 @@ class CatadorPage:
                     <p><strong>Local:</strong> {morador_bairro} - {morador_endereco}</p>
                     <p><strong>Data:</strong> {coleta.get('data_coleta', 'Não especificada')} às {coleta.get('horario_coleta', 'Não especificado')}</p>
                     <p><strong>Materiais:</strong> {coleta.get('tipos_materiais', coleta.get('materiais', 'Não especificado'))}</p>
-                    <p><strong>Quantidade estimada:</strong> {coleta.get('quantidade_estimada', 'Não especificada')} kg</p>
+                    <p><strong>Quantidade estimada:</strong> {coleta.get('quantidade_estimada', coleta.get('peso_kg', 'Não especificada'))} kg</p>
                 </div>
             </div>
             """, unsafe_allow_html=True)

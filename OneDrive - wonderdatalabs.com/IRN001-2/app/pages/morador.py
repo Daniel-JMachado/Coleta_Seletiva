@@ -601,6 +601,14 @@ class MoradorPage:
                                     ["Papel", "Plástico", "Metal", "Vidro", "Eletrônicos", "Outros"],
                                     help="Selecione os tipos de material que você tem para coleta"
                                 )
+                                quantidade_estimada = st.number_input(
+                                    "Quantidade Estimada (kg)",
+                                    min_value=0.1,
+                                    max_value=1000.0,
+                                    value=1.0,
+                                    step=0.1,
+                                    help="Informe a quantidade estimada de material em quilogramas"
+                                )
                             
                             observacoes = st.text_area(
                                 "Observações",
@@ -616,30 +624,49 @@ class MoradorPage:
                                     st.error("Por favor, informe o endereço da coleta.")
                                 elif not tipo_material:
                                     st.error("Por favor, selecione pelo menos um tipo de material.")
+                                elif quantidade_estimada <= 0:
+                                    st.error("Por favor, informe uma quantidade válida de material.")
                                 else:
                                     # Processa a solicitação
-                                    from app.utils.database import save_coleta_request
+                                    from app.utils.database import save_coleta, save_notificacao
+                                    import random
                                     
                                     # Dados da solicitação
                                     coleta_data = {
                                         'morador_id': self.user_data.get('id'),
-                                        'catador_id': catador.get('id'),
-                                        'data_coleta': data_coleta,
+                                        'catador_id': None,  # Não atribuído ainda
+                                        'data_coleta': data_coleta.strftime('%Y-%m-%d'),
                                         'horario_coleta': horario_coleta,
                                         'endereco_coleta': endereco_coleta,
-                                        'tipo_material': ', '.join(tipo_material),
+                                        'tipos_materiais': ', '.join(tipo_material),
                                         'observacoes': observacoes,
-                                        'status': 'pendente'
+                                        'status': 'pendente',
+                                        'data_criacao': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                                        'bairro': self.user_data.get('bairro', ''),
+                                        'quantidade_estimada': f'{quantidade_estimada:.1f}',
+                                        'peso_kg': quantidade_estimada  # Para compatibilidade com cálculos existentes
                                     }
                                     
-                                    success = save_coleta_request(coleta_data)
+                                    success, message = save_coleta(coleta_data)
                                     
                                     if success:
-                                        st.success(f"🎉 Solicitação enviada com sucesso para {catador.get('nome', 'o catador')}!")
+                                        st.success(f"🎉 Solicitação enviada com sucesso!")
                                         st.info("Você pode acompanhar o status da sua solicitação na seção 'Minhas Coletas'.")
+                                        
+                                        # Criar notificação para o catador
+                                        nova_notificacao = {
+                                            "usuario_id": catador.get('id'),
+                                            "tipo_usuario": "catador",
+                                            "titulo": "Nova solicitação de coleta",
+                                            "mensagem": f"O morador {self.user_data['nome']} solicitou uma coleta para o dia {data_coleta.strftime('%d/%m/%Y')} ({horario_coleta}). Materiais: {', '.join(tipo_material)}. Quantidade estimada: {quantidade_estimada:.1f} kg",
+                                            "data": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                                            "lida": False
+                                        }
+                                        save_notificacao(nova_notificacao)
+                                        
                                         st.balloons()
                                     else:
-                                        st.error("Erro ao enviar a solicitação. Tente novamente.")
+                                        st.error(f"Erro ao enviar a solicitação: {message}")
         
         # Garantir que current_page está dentro dos limites válidos
         if current_page > total_pages:
@@ -743,6 +770,13 @@ class MoradorPage:
                 st.write(f"**Data:** {data_coleta} às {horario_coleta}")
                 st.write(f"**Materiais:** {materiais}")
                 st.write(f"**Endereço:** {endereco}")
+                
+                # Mostrar quantidade estimada
+                quantidade_estimada = coleta.get('quantidade_estimada', coleta.get('peso_kg', 'Não especificada'))
+                if str(quantidade_estimada).replace('.', '').isdigit():
+                    st.write(f"**Quantidade estimada:** {quantidade_estimada} kg")
+                else:
+                    st.write(f"**Quantidade estimada:** {quantidade_estimada}")
                 
                 if observacoes:
                     st.write(f"**Observações:** {observacoes}")

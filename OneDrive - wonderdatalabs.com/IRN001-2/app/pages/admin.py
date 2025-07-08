@@ -17,17 +17,20 @@ import io
 try:
     import plotly.express as px
     import plotly.graph_objects as go
+    PLOTLY_AVAILABLE = True
 except ImportError:
-    st.error("Erro ao importar bibliotecas Plotly. Por favor, instale com 'pip install plotly==5.17.0 plotly-express'")
+    print("Plotly não está disponível. Gráficos serão desabilitados.")
     px = None
     go = None
+    PLOTLY_AVAILABLE = False
 import hashlib
 
 from app.utils.database import (
     load_users, load_coletas, save_user, update_user, delete_user,
-    register_user, load_conteudo_educativo, save_conteudo_educativo,
+    load_conteudo_educativo, save_conteudo_educativo,
     add_artigo, add_dica, save_notificacao, save_profile_photo
 )
+from app.utils.auth import register_user
 
 class AdminPage:
     """
@@ -237,8 +240,12 @@ class AdminPage:
             if not coletas.empty and 'status' in coletas.columns:
                 try:
                     # Verificar se o módulo plotly está disponível
-                    if 'px' not in globals():
-                        st.error("Biblioteca Plotly não está disponível. Verifique a instalação.")
+                    if not PLOTLY_AVAILABLE or px is None:
+                        st.info("Gráficos não disponíveis. Biblioteca Plotly não instalada.")
+                        # Mostrar dados em tabela como alternativa
+                        status_counts = coletas['status'].value_counts().reset_index()
+                        status_counts.columns = ['Status', 'Quantidade']
+                        st.dataframe(status_counts, use_container_width=True)
                     else:
                         status_counts = coletas['status'].value_counts().reset_index()
                         status_counts.columns = ['Status', 'Quantidade']
@@ -272,8 +279,12 @@ class AdminPage:
             # Gráfico de usuários por tipo com tratamento de exceções
             try:
                 # Verificar se o módulo plotly está disponível
-                if 'px' not in globals():
-                    st.error("Biblioteca Plotly não está disponível. Verifique a instalação.")
+                if not PLOTLY_AVAILABLE or px is None:
+                    st.info("Gráficos não disponíveis. Biblioteca Plotly não instalada.")
+                    # Mostrar dados em tabela como alternativa
+                    user_types = users['tipo'].value_counts().reset_index()
+                    user_types.columns = ['Tipo', 'Quantidade']
+                    st.dataframe(user_types, use_container_width=True)
                 else:
                     user_types = users['tipo'].value_counts().reset_index()
                     user_types.columns = ['Tipo', 'Quantidade']
@@ -371,20 +382,26 @@ class AdminPage:
                         
                     # Chamada para função de registro
                     try:
-                        result = register_user(nome, email, senha, tipo, telefone, endereco, bairro)
-                        if result['success']:
+                        success, message = register_user(nome, email, senha, tipo, bairro, telefone, endereco)
+                        if success:
                             # Se o usuário foi criado com sucesso e tem foto, salvar a foto
                             if uploaded_file is not None:
-                                success, photo_path = save_profile_photo(result['user_id'], uploaded_file)
-                                if not success:
+                                # Obter o ID do usuário recém-criado
+                                users_df = load_users()
+                                user_id = users_df[users_df['email'] == email]['id'].iloc[0]
+                                success_photo, photo_path = save_profile_photo(user_id, uploaded_file)
+                                if not success_photo:
                                     st.warning(f"Usuário cadastrado, mas houve um erro ao salvar a foto: {photo_path}")
                             
                             st.success("Usuário cadastrado com sucesso!")
                             
                             # Cria notificação para o novo usuário
                             try:
+                                # Obter o ID do usuário recém-criado
+                                users_df = load_users()
+                                user_id = users_df[users_df['email'] == email]['id'].iloc[0]
                                 notificacao = {
-                                    'usuario_id': result['user_id'],
+                                    'usuario_id': user_id,
                                     'tipo_usuario': tipo,  # Adiciona o tipo_usuario
                                     'titulo': 'Bem-vindo ao Sistema de Coleta Seletiva Conectada',
                                     'mensagem': f'Olá {nome}, seu cadastro foi realizado com sucesso. Sua senha padrão é "123". Recomendamos que altere sua senha no primeiro acesso.',
@@ -395,7 +412,7 @@ class AdminPage:
                             except Exception as e:
                                 st.warning(f"Usuário cadastrado, mas houve um erro ao criar notificação: {str(e)}")
                         else:
-                            st.error(f"Erro no cadastro: {result['message']}")
+                            st.error(f"Erro no cadastro: {message}")
                     except Exception as e:
                         st.error(f"Erro ao processar o cadastro: {str(e)}")
                 else:
@@ -632,8 +649,25 @@ class AdminPage:
                 """, unsafe_allow_html=True)
             
             with col4:
-                # Peso total coletado
-                peso_total = coletas['peso_kg'].sum() if 'peso_kg' in coletas.columns else 0
+                # Peso total coletado - usar tanto peso_kg quanto quantidade_estimada
+                peso_total = 0.0
+                if not coletas.empty:
+                    # Primeiro, tentar usar peso_kg
+                    if 'peso_kg' in coletas.columns:
+                        peso_kg_sum = coletas['peso_kg'].fillna(0).sum()
+                        if peso_kg_sum is not None:
+                            peso_total += float(peso_kg_sum)
+                    
+                    # Se não tiver peso_kg ou for zero, usar quantidade_estimada
+                    if peso_total == 0 and 'quantidade_estimada' in coletas.columns:
+                        # Converter quantidade_estimada para float, tratando strings
+                        for valor in coletas['quantidade_estimada']:
+                            try:
+                                if valor and str(valor).replace('.', '').replace(',', '').isdigit():
+                                    peso_total += float(str(valor).replace(',', '.'))
+                            except (ValueError, TypeError):
+                                continue
+                
                 st.markdown(f"""
                 <div style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%); 
                             padding: 25px; border-radius: 15px; color: #2d3748; text-align: center; 
