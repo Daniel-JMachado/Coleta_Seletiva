@@ -1,1 +1,1 @@
-# Módulo de páginas do sistema
+# Pages package initialization

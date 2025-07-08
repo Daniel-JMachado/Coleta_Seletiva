@@ -1,1 +1,1 @@
-# Pacote de utilitários do sistema
+# Utils package initialization
