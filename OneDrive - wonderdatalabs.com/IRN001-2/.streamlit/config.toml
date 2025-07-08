@@ -1,26 +1,16 @@
 [global]
-# Configuração global
-developmentMode = false
-showWarningOnDirectExecution = false
+dataFrameSerialization = "legacy"
 
 [server]
-# Configurações do servidor
-headless = true
-port = 8501
 enableCORS = false
 enableXsrfProtection = false
-maxUploadSize = 200
+maxUploadSize = 10
 
-[browser]
-# Configurações do navegador
-gatherUsageStats = false
-serverAddress = "0.0.0.0"
-serverPort = 8501
+[client]
+toolbarMode = "minimal"
 
 [theme]
-# Tema personalizado
-primaryColor = "#2E8B57"
-backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F0F8F0"
-textColor = "#262730"
-font = "sans serif" 
+primaryColor = "#2e8b57"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730" 
